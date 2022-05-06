@@ -190,3 +190,55 @@ print("뒤 7자리 :" + jumin[7:]) # 7번쨰부터 끝까지
 print("뒤 7자리 :" + jumin[-7:]) # 뒤부터 할 때는 마이너스 1 (-1) 부터 시작
 
 #작심삼십일 일일코딩 2022.5.5 (목) 끝.
+
+#작심삼십일 일일코딩 2022.5.6 (금) 시작
+
+#문자열
+
+python = "Python is Amazing"
+print(python.lower()) #소문자로 출력
+print(python.upper()) #대문자로 출력
+print(python[0].isupper()) #첫번째 글자가 대문자가 맞느냐? 맞으면 true
+print(len(python)) #총 글자 길이가 17이 맞느냐? 공백포함 하여.
+print(python.replace("Python","JAVA"))
+
+index = python.index("n")
+print(index) #n 글자가 몇번째에 위치하냐
+index = python.index("n", index + 1) #두번째 n의 위치
+print(index)
+
+print(python.find("Java")) # find는 원하는 값이 포함되어 있지 않으면 "-1"이 출력됨
+#print(python.index("Java")) # index는 원하는 값이 없으면 오류를 내면서 종료됨
+
+print(python.count("n")) #n이라는 글자가 몇 번 나오나
+
+# 문자열 포맷
+
+print("a" + "b")
+print("a", "b") #콤마는 띄어쓰기됨
+
+#방법 1
+print("나는 %d살입니다." % 20) # d는 정수값만 가능
+print("나는 %s을 좋아해요." % "파이썬") #s는 문자열 스트링값을 넣겠다는 것
+print("Apple 은 %c 로 시작해요." % "A") #C는 캐릭터라서 한 글자만 받겠다는 것임
+
+# %s 로만 쓰면 각 출력을 잘 할 수 있다.
+
+print("나는 %s살입니다." % 20) # d는 정수값만 가능
+print("나는 %s색과 %s색을 좋아해여." % ("파란", "빨간"))
+
+#방법2
+print("나는 {}살입니다.".format(20))
+print("나는 {}색과 {}색을 좋아해여.".format("파란","빨간"))
+print("나는 {1}색과 {0}색을 좋아해여.".format("파란","빨간"))
+
+#방법 3
+print("나는 {age}살이며, {color}색을 좋아해요".format(age=20, color="빨간"))
+print("나는 {age}살이며, {color}색을 좋아해요".format(color="빨간", age=20))
+
+#방법 4 (Python v 3.6 이상버전부터 사용 가능)
+age = 20
+color = "빨간"
+print(f"나는 {age}살이며, {color}색을 좋아해요")
+
+#작심삼십일 일일코딩 2022.5.6 (금) 끝.
