@@ -299,3 +299,28 @@ password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
 print("{0}의 비밀번호는 {1} 입니다.".format(url, password))
 
 #작심삼십일 일일코딩 2022.5.8 (일) 끝.
+
+#작심삼십일 일일코딩 2022.5.9 (월) 시작
+
+# 문자열 처리 함수
+
+python = "Python is Amazing"
+print(python.lower())
+print(python.upper())
+print(python[0].isupper())
+print(len(python))
+print(python.replace("Python", "Java"))
+
+index = python.index("n")
+print(index)
+index = python.index("n", index + 1)
+print(index)
+
+print(python.find("n"))
+print(python.find("Java")) # 원하는 값이 없을 시 -1로 반환
+# 참고. print(python.index("Java")) # 원하는 값이 없을 시 오류가 남
+print("hi")
+
+print(python.count("n"))
+
+#작심삼십일 일일코딩 2022.5.9 (월) 끝.
