@@ -324,3 +324,101 @@ print("hi")
 print(python.count("n"))
 
 #작심삼십일 일일코딩 2022.5.9 (월) 끝.
+
+#작심삼십일 일일코딩 2022.5.10 (화) 시작
+
+#문자열 포맷
+
+# print("a" + "b")
+# print("a", "b")
+
+# 방법 1
+print("나는 %d살 입니다." %20) #d는 정수값만 가능
+
+print("나는  %s을 좋아해요." % "파이썬") #%s는 문자열 을 넣겠다
+
+print("Apple 은 %c로 시작해요" % "A") #% c는 한글자만
+
+# %s
+print("나는 %s살 입니다." %20) #d는 정수값만 가능
+print("나는 %s색과 %s색을 좋아해요." % ("파란", "빨간"))
+
+# 방법 2
+print("나는 {}살입니다.".format(20))
+print("나는 {}색과 {} 색을 좋아해요.".format("파란", "빨간"))
+print("나는 {0}색과 {1} 색을 좋아해요.".format("파란", "빨간"))
+print("나는 {1}색과 {0} 색을 좋아해요.".format("파란", "빨간"))
+
+#방법 3
+print("나는 {age}살이며, {color}색을 좋아해요".format(age=20, color="빨간"))
+print("나는 {age}살이며, {color}색을 좋아해요".format(color="빨간", age=20))
+
+#방법 4
+
+age =20
+color = "빨간"
+print(f"나는 {age}살이며, {color} 색을 좋아해요.")
+
+#리스트 []
+#순서를 가지는 객체의 집합
+#지하철 칸별로 10명, 20명, 30명
+
+# subway1 = 10
+# subway2 = 20
+# subway3 = 30
+
+subway = [10, 20, 30]
+print(subway)
+
+subway = ["유재석", "조세호", "박명수"]
+
+# 조세호 씨가 몇 번쨰 칸에 타고 있는가?
+print(subway.index("조세호"))
+
+# 하하씨가 다음 정류장에서 다음 칸에 탐
+subway.append("하하")
+print(subway)
+
+# 정형돈씨를 유재석 조세호 사이에 태워봄
+subway.insert(1, "정형돈")
+print(subway)
+
+# 지하철에 있는 사람을 한 명씩 뒤에서 꺼냄
+print(subway.pop())
+print(subway)
+
+print(subway.pop())
+print(subway)
+
+print(subway.pop())
+print(subway)
+
+#같은 이름의 사람이 몇 명 있는지 확인
+subway.append("유재석")
+print(subway)
+print(subway.count("유재석"))
+
+
+#정렬
+
+num_list=[5,2,4,3,1,]
+num_list.sort()
+print(num_list)
+
+#순서 뒤집기 가능
+num_list.reverse()
+print(num_list)
+
+# 모두 지우기
+# num_list.clear()
+# print(num_list)
+
+#다양한 자료형 함께 사용
+mix_list = ["조세호", 20, True]
+#print(mix_list)
+
+#리스트 확장
+num_list.extend(mix_list)
+print(num_list)
+
+#작심삼십일 일일코딩 2022.5.10 (화) 끝.
