@@ -524,4 +524,20 @@ print(python)
 java.remove("김태호")
 print(java)
 
-#작심삼십일 일일코딩 2022.5.14 (토) 끝.
+#작심삼십일 일일코딩 2022.5.15 (일) 시작
+
+#자료 구조의 변경
+
+menu = {"커피", "우유", "주스"}
+print(menu, type(menu))
+
+menu=list(menu)
+print(menu, type(menu))
+
+menu=tuple(menu)
+print(menu, type(menu))
+
+menu=set(menu)
+print(menu, type(menu))
+
+#작심삼십일 일일코딩 2022.5.15 (일) 끝.
