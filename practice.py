@@ -600,23 +600,52 @@ print("-- 축하합니다 --")
 
 #if
 
-weather = input("오늘 날씨는 어때요? ")
-if weather == "비" or weather == "눈": 
-    print("우산을 챙기세요")
-elif weather == "미세먼지" :
-    print("마스크를 챙기세요")
-else:
-    print("준비물 필요 없어요.")
+# weather = input("오늘 날씨는 어때요? ")
+# if weather == "비" or weather == "눈": 
+#     print("우산을 챙기세요")
+# elif weather == "미세먼지" :
+#     print("마스크를 챙기세요")
+# else:
+#     print("준비물 필요 없어요.")
 
-temp = int(input("기온은 어때요?"))
+# temp = int(input("기온은 어때요?"))
 
-if 30<= temp:
-    print("너무 더워요. 나가지 마세요")
-elif 10<= temp and temp < 30:
-    print("괜찮은 날씨에요")
-elif 0<= temp < 10:
-    print("외투를 챙기세요")
-else:
-    print("너무 추워요, 나가지 마세요")
+# if 30<= temp:
+#     print("너무 더워요. 나가지 마세요")
+# elif 10<= temp and temp < 30:
+#     print("괜찮은 날씨에요")
+# elif 0<= temp < 10:
+#     print("외투를 챙기세요")
+# else:
+#     print("너무 추워요, 나가지 마세요")
 
 #작심삼십일 일일코딩 2022.5.17 (화) 끝.
+
+#작심삼십일 일일코딩 2022.5.18 (수) 시작
+
+# for
+
+# print("대기번호 : 1")
+# print("대기번호 : 2")
+# print("대기번호 : 3")
+# print("대기번호 : 4")
+
+# randrange
+
+for waiting_no in [1,2,3,4,5]: #waiting_no 에 순서대로 1, 2, 3, 4, 5가 차례로 들어가는 것임
+    print("대기번호 : {0}".format(waiting_no))
+    print(waiting_no)
+
+
+
+# for waiting_no in range(1, 6): # 1,2,3,4,5 (range (5) = 0에서부터 5미만 까지)
+#     print("대기번호 : {0}".format(waiting_no))
+
+# starbucks = ["아이먼맨", "토르", "아이엠그루트"]
+# for customer in starbucks:
+#     print("{0}, 커피가 준비되었습니다.".format(customer)) # 여러번 반복해야 되는 작업을 for를 통해서 한번에 출력이 가능
+
+
+# # print("대기번호 : 4")
+
+#작심삼십일 일일코딩 2022.5.18 (수) 끝.
