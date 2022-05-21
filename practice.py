@@ -654,24 +654,44 @@ for waiting_no in [1,2,3,4,5]: #waiting_no 에 순서대로 1, 2, 3, 4, 5가 차
 
 # while 문 : 어떤 조건이 만족할 때까지 반복하라!
 
-customer = "토르"
-index = 5
-while index >= 1:
-    print("{0}, 커피가 준비 되었습니다. {1} 번 남았어요.".format(customer, index))
-    index -=1
-    if index == 0:
-        print("커피는 폐기처분 되었습니다.")
+# customer = "토르"
+# index = 5
+# while index >= 1:
+#     print("{0}, 커피가 준비 되었습니다. {1} 번 남았어요.".format(customer, index))
+#     index -=1
+#     if index == 0:
+#         print("커피는 폐기처분 되었습니다.")
 
 # customer = "아이언맨"
 # while True:
 #     print("{0}, 커피가 준비되었습니다. 호출 {1} 회".format(customer, index))
 #     index +=1 # 무한루프
 
-customer = "토르"
-person = "Unknown"
+# customer = "토르"
+# person = "Unknown"
 
-while person !=customer :
-    print("{0}, 커피가 준비되었습니다".format(customer))
-    person = input("이름이 어떻게 되세요?")
+# while person !=customer :
+#     print("{0}, 커피가 준비되었습니다".format(customer))
+#     person = input("이름이 어떻게 되세요?")
 
 #작심삼십일 일일코딩 2022.5.20 (금) 끝.
+
+#작심삼십일 일일코딩 2022.5.21 (토) 시작
+
+#continue 와 break
+
+absent = [2, 5] #결석
+no_book = [7] #책을 깜빡 했음
+for student in range(1, 11): #1,2,3,4,5,6,7,8,9,10
+    if student in absent:
+        continue
+    elif student in no_book:
+        print("오늘 수업 여기까지. {0}는 교무실로 따라와".format(student))
+        break
+    print("{0}, 책을 읽어봐".format(student))
+
+#continue를 만났을 때는 계속해서 다음 반복 진행, break를 만났을 떄는 탈출
+
+#작심삼십일 일일코딩 2022.5.21 (토) 끝.
+
+
