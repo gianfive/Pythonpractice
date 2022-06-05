@@ -92,3 +92,33 @@ weight = round(std_weight(height / 100, gender), 2)
 print("키 {0} cm {1} 표준 체중은 {2} kg 입니다.".format(height,gender, weight))
 
 # 작심삼일 일일코딩 2022.6.4 (토) 끝.
+
+# 작심삼일 일일코딩 2022.6.5 (일) 시작.
+# 표준입출력
+
+print("python", "Java", "Java script", sep=" vs ")
+
+print("python", "Java", sep=",", end="?") # end : 줄바꿈이 아닌 뒷 문장이 한줄에 출력
+print("무엇이 더 재미있을까요?")
+
+# import sys
+# print("Python", "Java", file=sys.stdout) # 표준출력
+# print("Python", "Java", file=sys.stderr) # 표준에러
+
+#시험성적
+# scores = {"수학":0, "영어":50, "코딩":100}
+# # print(scores.items())
+# for subject, score in scores.items():
+# #     print(subject, score)
+#      print(subject.ljust(8), str(score).rjust(4), sep=":")
+
+#은행대기순번표
+# 001, 002, 003,...
+# for num in range(1,21):
+#     print("대기번호 : " + str (num).zfill(3))
+
+answer = input("아무 값이나 입력하세요: ") #입력된 값이 answer 에 들어감
+print("입력하신 값은 " + answer + "입니다.")
+# 주의 : 사용자 입력 형태는 항상 문자열 (str) 로 저장이 됨
+
+# 작심삼일 일일코딩 2022.6.5 (일) 끝.
