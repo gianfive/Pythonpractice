@@ -156,3 +156,13 @@ print("{0:f}".format(5/3))
 print("{0:.2f}".format(5/3))
 
 # 작심삼일 일일코딩 2022.6.6 (월) 끝.
+
+# 작심삼일 일일코딩 2022.6.7 (화) 시작
+# 파일 입출력
+
+# score_file = open("score.txt", "w", encoding="utf8")
+# print("수학 : 0", file=score_file)
+# print("영어 : 50", file=score_file)
+# score_file.close()
+
+# 작심삼일 일일코딩 2022.6.7 (화) 끝.
