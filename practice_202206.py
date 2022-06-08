@@ -204,3 +204,22 @@ for line in lines:
 score_file.close()
 
 # 작심삼일 일일코딩 2022.6.8 (수) 끝.
+
+# 작심삼일 일일코딩 2022.6.9 (목) 시작
+# pickle 프로그램 상에서 사용하고 있는 데이터를 파일 형태로 저장을 해 주는 것
+
+import pickle
+# profile_file = open("profile.pickle", "wb")
+# profile = {"이름":"박명수", "나이":30, "취미":["축구","골프","코딩"]}
+# print(profile)
+# pickle.dump(profile, profile_file) # profile 에 있는 정보를 file에 저장
+# profile_file.close()
+
+# profile_file = open("profile.pickle","rb")
+# profile = pickle.load(profile_file) # file 에 있는 정보를 profile에 불러오기
+
+# print(profile)
+# profile_file.close()
+
+# 작심삼일 일일코딩 2022.6.9 (목) 끝.
+
