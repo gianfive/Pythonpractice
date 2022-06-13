@@ -290,3 +290,23 @@ marine2 = Unit("마린", 40, 5)
 tank = Unit("탱크", 150, 35)
 
 # 작심삼일 일일코딩 2022.6.12 (일) 끝.
+
+# 작심삼일 일일코딩 2022.6.13 (월) 시작
+# __init
+
+class Unit: #객체생성, 인스턴스
+    def __init__(self, name, hp, damage):
+        self.name = name
+        self.hp = hp
+        self.damage = damage
+        print("{0} 유닛이 생성되었습니다.".format(self.name))
+        print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
+
+marine1 = Unit("마린", 40, 5)
+marine2 = Unit("마린", 40, 5)
+tank = Unit("탱크", 150, 35)
+
+marine3 = Unit("마린", 40) # 오류 멧시지가 뜸. 항상 똑같이 해주어야 함
+
+
+# 작심삼일 일일코딩 2022.6.13 (월) 끝.
