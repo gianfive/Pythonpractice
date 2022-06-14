@@ -277,17 +277,17 @@
 # attack(name, "1시", damage)
 # attack(tank_name, "1시", tank_damage)
 
-class Unit:
-    def __init__(self, name, hp, damage):
-        self.name = name
-        self.hp = hp
-        self.damage = damage
-        print("{0} 유닛이 생성되었습니다.".format(self.name))
-        print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
+# class Unit:
+#     def __init__(self, name, hp, damage):
+#         self.name = name
+#         self.hp = hp
+#         self.damage = damage
+#         print("{0} 유닛이 생성되었습니다.".format(self.name))
+#         print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
 
-marine1 = Unit("마린", 40, 5)
-marine2 = Unit("마린", 40, 5)
-tank = Unit("탱크", 150, 35)
+# marine1 = Unit("마린", 40, 5)
+# marine2 = Unit("마린", 40, 5)
+# tank = Unit("탱크", 150, 35)
 
 # 작심삼일 일일코딩 2022.6.12 (일) 끝.
 
@@ -302,11 +302,33 @@ class Unit: #객체생성, 인스턴스
         print("{0} 유닛이 생성되었습니다.".format(self.name))
         print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
 
-marine1 = Unit("마린", 40, 5)
-marine2 = Unit("마린", 40, 5)
-tank = Unit("탱크", 150, 35)
+# marine1 = Unit("마린", 40, 5)
+# marine2 = Unit("마린", 40, 5)
+# tank = Unit("탱크", 150, 35)
 
-marine3 = Unit("마린", 40) # 오류 멧시지가 뜸. 항상 똑같이 해주어야 함
+# marine3 = Unit("마린", 40) # 오류 멧시지가 뜸. 항상 똑같이 해주어야 함
 
 
 # 작심삼일 일일코딩 2022.6.13 (월) 끝.
+
+# 작심삼일 일일코딩 2022.6.14 (화) 시작
+# 멤버변수
+
+# 레이스 : 공중유닛
+
+wraith1 = Unit("레이스", 80,5)
+print("유닛 이름 : {0}, 공격력 : {1}".format(wraith1.name, wraith1.damage))
+
+#프로토스
+# 다크아칸 마인드컨트롤 : 상대방 유닛을 내 것으로 만드는 것 (빼앗음)
+
+wraith2 = Unit("빼앗은 레이스", 80, 5)
+wraith2.clocking = True
+if wraith2.clocking == True:
+    print("{0}는 현재 클로킹 상태입니다.".format(wraith2.name))
+
+# 유닛의 기본 정보는 이름(name), 체력(hp), 데미지(damage) 세 가지로만 정의되어 있기 때문에 클로킹을 쓰려면 아래에서 다시 정의해 주여야 한다.
+
+
+# 작심삼일 일일코딩 2022.6.14 (화) 끝.
+
