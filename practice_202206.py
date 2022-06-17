@@ -262,22 +262,39 @@
 # print("{} 유닛이 생성되었습니다.".format(name))
 # print("체력 {0}, 공격력 {1}\n".format(hp, damage))
 
-# # 탱크 : 공격유닛, 탱크, 포를 쏠 수 있고 일반 시즈모드 있음
+# # # 탱크 : 공격유닛, 탱크, 포를 쏠 수 있고 일반 시즈모드 있음
 
-# tank_name = "탱크"
-# tank_hp = 150
-# tank_damage = 35
+# # tank_name = "탱크"
+# # tank_hp = 150
+# # tank_damage = 35
 
-# print("{} 유닛이 생성되었습니다.".format(tank_name))
-# print("체력 {0}, 공격력 {1}\n".format(tank_hp, tank_damage))
+# # print("{} 유닛이 생성되었습니다.".format(tank_name))
+# # print("체력 {0}, 공격력 {1}\n".format(tank_hp, tank_damage))
 
-# def attack(name, location, damage):
-#     print("{0} : {1} 방향으로 적군을 공격 합니다. [공격력 {2}]".format(name, location,damage))
+# # def attack(name, location, damage):
+# #     print("{0} : {1} 방향으로 적군을 공격 합니다. [공격력 {2}]".format(name, location,damage))
 
-# attack(name, "1시", damage)
-# attack(tank_name, "1시", tank_damage)
+# # attack(name, "1시", damage)
+# # attack(tank_name, "1시", tank_damage)
 
-# class Unit:
+# # class Unit:
+# #     def __init__(self, name, hp, damage):
+# #         self.name = name
+# #         self.hp = hp
+# #         self.damage = damage
+# #         print("{0} 유닛이 생성되었습니다.".format(self.name))
+# #         print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
+
+# # marine1 = Unit("마린", 40, 5)
+# # marine2 = Unit("마린", 40, 5)
+# # tank = Unit("탱크", 150, 35)
+
+# # 작심삼일 일일코딩 2022.6.12 (일) 끝.
+
+# # 작심삼일 일일코딩 2022.6.13 (월) 시작
+# # __init
+
+# class Unit: #객체생성, 인스턴스
 #     def __init__(self, name, hp, damage):
 #         self.name = name
 #         self.hp = hp
@@ -285,63 +302,90 @@
 #         print("{0} 유닛이 생성되었습니다.".format(self.name))
 #         print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
 
-# marine1 = Unit("마린", 40, 5)
-# marine2 = Unit("마린", 40, 5)
-# tank = Unit("탱크", 150, 35)
+# # marine1 = Unit("마린", 40, 5)
+# # marine2 = Unit("마린", 40, 5)
+# # tank = Unit("탱크", 150, 35)
 
-# 작심삼일 일일코딩 2022.6.12 (일) 끝.
-
-# 작심삼일 일일코딩 2022.6.13 (월) 시작
-# __init
-
-class Unit: #객체생성, 인스턴스
-    def __init__(self, name, hp, damage):
-        self.name = name
-        self.hp = hp
-        self.damage = damage
-        print("{0} 유닛이 생성되었습니다.".format(self.name))
-        print("체력 {0}, 공격력 {1}".format(self.hp, self.damage))
-
-# marine1 = Unit("마린", 40, 5)
-# marine2 = Unit("마린", 40, 5)
-# tank = Unit("탱크", 150, 35)
-
-# marine3 = Unit("마린", 40) # 오류 멧시지가 뜸. 항상 똑같이 해주어야 함
+# # marine3 = Unit("마린", 40) # 오류 멧시지가 뜸. 항상 똑같이 해주어야 함
 
 
-# 작심삼일 일일코딩 2022.6.13 (월) 끝.
+# # 작심삼일 일일코딩 2022.6.13 (월) 끝.
 
-# 작심삼일 일일코딩 2022.6.14 (화) 시작
-# 멤버변수
+# # 작심삼일 일일코딩 2022.6.14 (화) 시작
+# # 멤버변수
 
-# 레이스 : 공중유닛
+# # 레이스 : 공중유닛
 
-wraith1 = Unit("레이스", 80,5)
-print("유닛 이름 : {0}, 공격력 : {1}".format(wraith1.name, wraith1.damage))
+# wraith1 = Unit("레이스", 80,5)
+# print("유닛 이름 : {0}, 공격력 : {1}".format(wraith1.name, wraith1.damage))
 
-#프로토스
-# 다크아칸 마인드컨트롤 : 상대방 유닛을 내 것으로 만드는 것 (빼앗음)
+# #프로토스
+# # 다크아칸 마인드컨트롤 : 상대방 유닛을 내 것으로 만드는 것 (빼앗음)
 
-wraith2 = Unit("빼앗은 레이스", 80, 5)
-wraith2.clocking = True
-if wraith2.clocking == True:
-    print("{0}는 현재 클로킹 상태입니다.".format(wraith2.name))
+# wraith2 = Unit("빼앗은 레이스", 80, 5)
+# wraith2.clocking = True
+# if wraith2.clocking == True:
+#     print("{0}는 현재 클로킹 상태입니다.".format(wraith2.name))
 
-# 유닛의 기본 정보는 이름(name), 체력(hp), 데미지(damage) 세 가지로만 정의되어 있기 때문에 클로킹을 쓰려면 아래에서 다시 정의해 주여야 한다.
-
-
-# 작심삼일 일일코딩 2022.6.14 (화) 끝.
+# # 유닛의 기본 정보는 이름(name), 체력(hp), 데미지(damage) 세 가지로만 정의되어 있기 때문에 클로킹을 쓰려면 아래에서 다시 정의해 주여야 한다.
 
 
-# 작심삼일 일일코딩 2022.6.16 (목) 시작
-# 메소드
+# # 작심삼일 일일코딩 2022.6.14 (화) 끝.
 
-class AttackUnit:
-    def __init__(self, name, hp, damage):
-        self.name = name
-        self.hp = hp
-        self.damage = damage
+
+# # 작심삼일 일일코딩 2022.6.16 (목) 시작
+# # 메소드
+
+# # 일반유닛
+# class AttackUnit:
+#     def __init__(self, name, hp, damage):
+#         self.name = name
+#         self.hp = hp
+#         self.damage = damage
         
+#     def attack(self, location):
+#         print("{0} : {1} 방향으로 적군을 공격 합니다. [공격력] {2}]"\
+#             .format(self.name, location, self.damage))
+
+#     def damaged(self, damage):
+#         print("{0} : {1} 데미지를 입었습니다.".format(self.name, damage))
+#         self.hp -=damage
+#         print("{0} : 현재 체력은 {1} 입니다.".format(self.name, self.hp))
+#         if self.hp <=0:
+#             print("{0} : 파괴되었습니다.".format(self.name))
+
+# #파이어뱃 : 공격 유닛, 화염방사기
+# firebat1 = AttackUnit("파이어뱃", 50, 16)
+# firebat1.attack("5시")
+
+# #공격 2번 받는다고 가정
+# firebat1.damaged(25)
+# firebat1.damaged(25)
+
+# # 작심삼일 일일코딩 2022.6.16 (목) 끝.
+
+# 작심삼일 일일코딩 2022.6.17 (금) 시작
+# 상속
+
+# 메딕 : 의무병
+
+# 일반유닛
+
+class Unit:
+    def __init__(self, name, hp):
+        self.name = name
+        self.hp = hp
+
+# 공격유닛
+
+class AttackUnit(Unit):
+    def __init__(self, name, hp, damage):
+        # self.name = name
+        # self.hp = hp
+        Unit.__init__(self, name, hp)
+        self.damage = damage
+
+
     def attack(self, location):
         print("{0} : {1} 방향으로 적군을 공격 합니다. [공격력] {2}]"\
             .format(self.name, location, self.damage))
@@ -353,6 +397,7 @@ class AttackUnit:
         if self.hp <=0:
             print("{0} : 파괴되었습니다.".format(self.name))
 
+
 #파이어뱃 : 공격 유닛, 화염방사기
 firebat1 = AttackUnit("파이어뱃", 50, 16)
 firebat1.attack("5시")
@@ -361,5 +406,5 @@ firebat1.attack("5시")
 firebat1.damaged(25)
 firebat1.damaged(25)
 
-# 작심삼일 일일코딩 2022.6.16 (목) 끝.
+# 작심삼일 일일코딩 2022.6.17 (금) 끝.
 
