@@ -398,13 +398,37 @@ class AttackUnit(Unit):
             print("{0} : 파괴되었습니다.".format(self.name))
 
 
-#파이어뱃 : 공격 유닛, 화염방사기
-firebat1 = AttackUnit("파이어뱃", 50, 16)
-firebat1.attack("5시")
+# #파이어뱃 : 공격 유닛, 화염방사기
+# firebat1 = AttackUnit("파이어뱃", 50, 16)
+# firebat1.attack("5시")
 
-#공격 2번 받는다고 가정
-firebat1.damaged(25)
-firebat1.damaged(25)
+# #공격 2번 받는다고 가정
+# firebat1.damaged(25)
+# firebat1.damaged(25)
 
 # 작심삼일 일일코딩 2022.6.17 (금) 끝.
 
+# 작심삼일 일일코딩 2022.6.17 (토) 시작
+# 다중상속
+
+# 드랍쉽 : 공중 유닛, 수송기 마린/ 파이어팻 / 탱크 등을 수송. 공격기등 불가
+
+class Flyable:
+    def __init__(self, flying_speed):
+        self.flying_speed = flying_speed
+    
+    def fly(self, name, location):
+        print("{0} :{1} 방향으로 날아갑니다. [속도 {2}]"\
+            .format(name, location, self.flying_speed))
+            
+# 공중 공격 유닛 클래스
+class FlyableAttackUnit(AttackUnit, Flyable):
+    def __init__(self, name, hp, damage, flying_speed):
+        AttackUnit.__init__(self, name, hp, damage)
+        Flyable.__init__(self, flying_speed)
+
+# 발키리 : 공중공격유닛, 한 번에 14발 미사일 발사.
+valkyrie = FlyableAttackUnit("발키리", 200, 6, 5)
+valkyrie.fly(valkyrie.name, "3시")
+
+# 작심삼일 일일코딩 2022.6.17 (토) 끝.
