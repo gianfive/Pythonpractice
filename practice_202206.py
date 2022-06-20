@@ -489,10 +489,33 @@ vulture = AttackUnit("벌쳐", 80, 10, 20)
 
 # 배틀크루저 : 공중유닛, 체력도 굉장히 좋음, 공격력도 좋음
 
-battlecruiser = FlyableAttackUnit("배틀크루저", 500, 25, 3)
+# battlecruiser = FlyableAttackUnit("배틀크루저", 500, 25, 3)
 
-vulture.move("11시")
-# battlecruiser.fly(battlecruiser.name, "9시")
-battlecruiser.move("9시")
+# vulture.move("11시")
+# # battlecruiser.fly(battlecruiser.name, "9시")
+# battlecruiser.move("9시")
 
 # 작심삼일 일일코딩 2022.6.17 (일) 끝.
+
+# 작심삼일 일일코딩 2022.6.18 (월) 시작
+# pass
+
+# 건물
+class BuildingUnit(Unit):
+    def __init__(self, name, hp, location):
+        pass
+
+# 서플라이 디폿 : 건물, 1개 건물 = 8유닛
+
+supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
+
+def game_start():
+    print("[알림] 새로운 게임을 시작합니다.")
+
+def game_over():
+    pass
+
+game_start()
+game_over()
+
+# 작심삼일 일일코딩 2022.6.18 (월) 끝.
