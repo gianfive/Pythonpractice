@@ -442,50 +442,50 @@
 # from stat import SF_APPEND
 
 
-class Unit:
-    def __init__(self, name, hp, speed):
-        self.name = name
-        self.hp = hp
-        self.speed = speed
+# class Unit:
+#     def __init__(self, name, hp, speed):
+#         self.name = name
+#         self.hp = hp
+#         self.speed = speed
         
-    def move(self, ldocation):
-        print("[지상 유닛 이동]")
-        print("{0} : {1} 방향으로 이동합니다. [속도 {2}]"\
-            .format(self.name, ldocation, self.speed))
-        Unit: Unit
+#     def move(self, ldocation):
+#         print("[지상 유닛 이동]")
+#         print("{0} : {1} 방향으로 이동합니다. [속도 {2}]"\
+#             .format(self.name, ldocation, self.speed))
+#         Unit: Unit
         
 
-# 공격유닛
+# # 공격유닛
 
-class AttackUnit(Unit):
-    def __init__(self, name, hp, speed, damage):
-        # self.name = name
-        # self.hp = hp
-        Unit.__init__(self, name, hp, speed)
-        self.damage = damage
+# class AttackUnit(Unit):
+#     def __init__(self, name, hp, speed, damage):
+#         # self.name = name
+#         # self.hp = hp
+#         Unit.__init__(self, name, hp, speed)
+#         self.damage = damage
 
-class Flyable:
-    def __init__(self, flying_speed):
-        self.flying_speed = flying_speed
+# class Flyable:
+#     def __init__(self, flying_speed):
+#         self.flying_speed = flying_speed
     
-    def fly(self, name, location):
-        print("{0} :{1} 방향으로 날아갑니다. [속도 {2}]"\
-            .format(name, location, self.flying_speed))
+#     def fly(self, name, location):
+#         print("{0} :{1} 방향으로 날아갑니다. [속도 {2}]"\
+#             .format(name, location, self.flying_speed))
             
-# 공중 공격 유닛 클래스
-class FlyableAttackUnit(AttackUnit, Flyable):
-    def __init__(self, name, hp, damage, flying_speed):
-        AttackUnit.__init__(self, name, hp, 0, damage) # 지상 스피드는 0으로 처리
-        Flyable.__init__(self, flying_speed)
+# # 공중 공격 유닛 클래스
+# class FlyableAttackUnit(AttackUnit, Flyable):
+#     def __init__(self, name, hp, damage, flying_speed):
+#         AttackUnit.__init__(self, name, hp, 0, damage) # 지상 스피드는 0으로 처리
+#         Flyable.__init__(self, flying_speed)
 
-    def move(self, location):
-        print("[공중유닛이동]")
-        self.fly(self.name, location)
+#     def move(self, location):
+#         print("[공중유닛이동]")
+#         self.fly(self.name, location)
 
 
 # 벌쳐 : 지상 유닛, 기동성이 좋음
 
-vulture = AttackUnit("벌쳐", 80, 10, 20)
+# vulture = AttackUnit("벌쳐", 80, 10, 20)
 
 # 배틀크루저 : 공중유닛, 체력도 굉장히 좋음, 공격력도 좋음
 
@@ -500,22 +500,54 @@ vulture = AttackUnit("벌쳐", 80, 10, 20)
 # 작심삼일 일일코딩 2022.6.18 (월) 시작
 # pass
 
-# 건물
-class BuildingUnit(Unit):
-    def __init__(self, name, hp, location):
-        pass
+# # 건물
+# class BuildingUnit(Unit):
+#     def __init__(self, name, hp, location):
+#         pass
 
 # 서플라이 디폿 : 건물, 1개 건물 = 8유닛
 
-supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
+# supply_depot = BuildingUnit("서플라이 디폿", 500, "7시")
 
-def game_start():
-    print("[알림] 새로운 게임을 시작합니다.")
+# def game_start():
+#     print("[알림] 새로운 게임을 시작합니다.")
 
-def game_over():
-    pass
+# def game_over():
+#     pass
 
-game_start()
-game_over()
+# game_start()
+# game_over()
 
 # 작심삼일 일일코딩 2022.6.18 (월) 끝.
+
+# 작심삼일 일일코딩 2022.6.18 (화) 시작
+# super
+
+# 건물
+# class BuildingUnit(Unit):
+#     def __init__(self, name, hp, location):
+#         # Unit.__init__(self, name, hp, 0)
+#         super().__init__(name, hp, 0)
+#         super.location = location
+
+
+class Unit:
+    def __init__(self):
+        print("Unit 생성자")
+
+class Flyable:
+    def __init__(self):
+        print("Flyable 생성자")
+
+class FlyableUnit(Flyable, Unit):
+    def __init__(self):
+        # super().__init__()
+        Unit.__init__(self)
+        Flyable.__init__(self)
+
+# 드랍쉽
+dropship = FlyableUnit()
+
+# 작심삼일 일일코딩 2022.6.18 (화) 끝.
+
+
