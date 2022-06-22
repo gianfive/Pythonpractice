@@ -531,30 +531,33 @@
 #         super.location = location
 
 
-from calendar import c
+# from asyncio.tasks import _T1
+# from calendar import c
 
 
-class Unit:
-    def __init__(self):
-        print("Unit 생성자")
+# class Unit:
+#     def __init__(self):
+#         print("Unit 생성자")
 
-class Flyable:
-    def __init__(self):
-        print("Flyable 생성자")
+# class Flyable:
+#     def __init__(self):
+#         print("Flyable 생성자")
 
-class FlyableUnit(Flyable, Unit):
-    def __init__(self):
-        # super().__init__()
-        Unit.__init__(self)
-        Flyable.__init__(self)
+# class FlyableUnit(Flyable, Unit):
+#     def __init__(self):
+#         # super().__init__()
+#         Unit.__init__(self)
+#         Flyable.__init__(self)
 
 # 드랍쉽
-dropship = FlyableUnit()
+# dropship = FlyableUnit()
 
 # 작심삼일 일일코딩 2022.6.21 (화) 끝.
 
 # 작심삼일 일일코딩 2022.6.22 (수) 시작
 # 스타크래프트 전반전
+
+from random import *
 
 # 일반유닛
 
@@ -642,7 +645,7 @@ class FlyableAttackUnit(AttackUnit, Flyable):
 # 레이스
 class Wraith(FlyableAttackUnit):
     def __init__(self):
-        FlyableAttackUnit.__init__("레이스", 80, 20, 5)
+        FlyableAttackUnit.__init__(self, "레이스", 80, 20, 5)
         self.clocked = False # 클로킹 모드 (해제 상태)
 
     def clocking(self):
@@ -654,3 +657,72 @@ class Wraith(FlyableAttackUnit):
             self.clocked = True 
 
 # 작심삼일 일일코딩 2022.6.22 (수) 끝.
+
+# 작심삼일 일일코딩 2022.6.23 (목) 시작
+# 스타크래프트 후반전
+
+def game_start():
+    print("[알림] ㅅ ㅐ로운 게임을 시작합니다.")
+
+def game_over():
+    print("Player : gg")
+    print("[Player] 님이 게임을 퇴장하셨습니다.")
+
+# 실제 게임 시작
+
+game_start()
+
+m1 = Marine()
+m2 = Marine()
+m3 = Marine()
+
+# 탱크 2기 생성
+t1 = Tank()
+t2 = Tank()
+
+# 레이스 1기
+w1 = Wraith()
+
+# 유닛 일괄 괄니 (생성된 모든 유닛 append)
+
+attak_units = []
+
+attak_units.append(m1)
+attak_units.append(m2)
+attak_units.append(m3)
+attak_units.append(t1)
+attak_units.append(t2)
+attak_units.append(w1)
+
+# 전군이동
+
+for unit in attack_units:
+    unit.move("1시")
+
+# 탱크 시즈모드 개발
+Tank.seize_developed = True
+print("[알림] 탱크 시즈모드 개발이 완료되었습니다.")
+
+# 공격 모드 준비 
+for unit in attack_units:
+    if isinstance(unit, Marine):
+        unit.stimpack()
+    elif isinstance(unit, Tank):
+        unit.set_seize_mode()
+    elif isinstance(unit, Wraith):
+        unit.clocking()
+
+# 전군 공격
+for unit in attack_units:
+    unit.attack("1시")
+
+# 전군 피해
+for unit in attack_units:
+    unit.damaged(randint(5, 21)) # 공격은 랜덤으로 받음 (5~20)
+
+# 게임종료
+game_over()
+
+# 작심삼일 일일코딩 2022.6.23 (목) 끝.
+
+
