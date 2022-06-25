@@ -766,4 +766,25 @@ for house in houses:
 
 # 작심삼일 일일코딩 2022.6.24 (금) 끝.
 
+# 작심삼일 일일코딩 2022.6.25 (토) 시작
+# 예외처리
 
+try:
+    print("나누기 전용계산기")
+    nums = []
+    nums.append(int(input("첫번째수입력 : ")))
+    nums.append(int(input("두번째수입력 : ")))
+    #nums.append(int(nums[0]/nums[1]))
+    print("{0} / {1} = {2}".format(nums[0], nums[1], nums[2]))
+
+except ValueError:
+    print("에러! 잘못값입력")
+
+except ZeroDivisionError as err:
+    print(err)
+
+except Exception as err:
+    print("알수 없는 에러")
+    print(err)
+
+# 작심삼일 일일코딩 2022.6.25 (토) 끝.
