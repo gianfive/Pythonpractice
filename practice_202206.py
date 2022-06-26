@@ -737,54 +737,72 @@
 # 송파 빌라 월세 500/50 2000년
 
 # [코드]
-class House:
-    #매물 초기화
-    def __init__(self, location, house_type, deal_type, price, completion_year):
-        self.location = location
-        self.house_type=house_type
-        self.deal_type=deal_type
-        self.price=price
-        self.completion_year=completion_year
+# class House:
+#     #매물 초기화
+#     def __init__(self, location, house_type, deal_type, price, completion_year):
+#         self.location = location
+#         self.house_type=house_type
+#         self.deal_type=deal_type
+#         self.price=price
+#         self.completion_year=completion_year
 
-    #매물 정보 표시
-    def show_detail(self):
-        print(self.location, self.house_type, self.deal_type\
-            , self.price, self.completion_year)
+#     #매물 정보 표시
+#     def show_detail(self):
+#         print(self.location, self.house_type, self.deal_type\
+#             , self.price, self.completion_year)
 
-houses = []
-house1 = House("강남", "아파트", "매매", "10억", "2010년")
-house2 = House("마포", "오피스텔", "전세", "5억", "2007년")
-house3 = House("송파", "빌라", "월세", "500/50", "2000년")
+# houses = []
+# house1 = House("강남", "아파트", "매매", "10억", "2010년")
+# house2 = House("마포", "오피스텔", "전세", "5억", "2007년")
+# house3 = House("송파", "빌라", "월세", "500/50", "2000년")
 
-houses.append(house1)
-houses.append(house2)
-houses.append(house3)
+# houses.append(house1)
+# houses.append(house2)
+# houses.append(house3)
 
-print("총 {0} 대의 매물이 있습니다.".format(len(houses)))
-for house in houses:
-    house.show_detail()
+# print("총 {0} 대의 매물이 있습니다.".format(len(houses)))
+# for house in houses:
+#     house.show_detail()
 
 # 작심삼일 일일코딩 2022.6.24 (금) 끝.
 
 # 작심삼일 일일코딩 2022.6.25 (토) 시작
 # 예외처리
 
-try:
-    print("나누기 전용계산기")
-    nums = []
-    nums.append(int(input("첫번째수입력 : ")))
-    nums.append(int(input("두번째수입력 : ")))
-    #nums.append(int(nums[0]/nums[1]))
-    print("{0} / {1} = {2}".format(nums[0], nums[1], nums[2]))
+# try:
+#     print("나누기 전용계산기")
+#     nums = []
+#     nums.append(int(input("첫번째수입력 : ")))
+#     nums.append(int(input("두번째수입력 : ")))
+#     #nums.append(int(nums[0]/nums[1]))
+#     print("{0} / {1} = {2}".format(nums[0], nums[1], nums[2]))
 
-except ValueError:
-    print("에러! 잘못값입력")
+# except ValueError:
+#     print("에러! 잘못값입력")
 
-except ZeroDivisionError as err:
-    print(err)
+# except ZeroDivisionError as err:
+#     print(err)
 
-except Exception as err:
-    print("알수 없는 에러")
-    print(err)
+# except Exception as err:
+#     print("알수 없는 에러")
+#     print(err)
 
 # 작심삼일 일일코딩 2022.6.25 (토) 끝.
+
+# 작심삼일 일일코딩 2022.6.26 (일) 시작
+
+try:
+    print("한자리 전용 계산기")
+    num1 = int(input("첫째자리숫자입력"))
+    num2 = int(input("둘째자리숫자입력"))
+    if num1 >=10 or num2 >=10:
+        raise ValueError
+    print("{0} / {1} = {2}".format(num1, num2, int(num1/num2)))
+
+except ValueError:
+    print("잘못된 값을 입력하였습니다. 한자리 숫자만 입력하세요")
+
+# 작심삼일 일일코딩 2022.6.26 (일) 끝.
+
+
+
