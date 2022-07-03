@@ -23,8 +23,23 @@
 # price_morning(6)
 # price_soldier(7)
 
-from theater_module import price_soldier as price
-price(5)
+# from theater_module import price_soldier as price
+# price(5)
 
 # 작심 일일 코딩 2022.7.1 (금) 끝.
 
+# 작심 일일 코딩 2022.7.3 (일) 시작.
+
+# import travel.thailand
+# trip_to = travel.thailand.ThailandPackage()
+# trip_to.detail()
+
+# from travel.thailand import ThailandPackage
+# trip_to = ThailandPackage()
+# trip_to.detail()
+
+from travel import vietnam
+trip_to = vietnam.VietnamPackage()
+trip_to.detail()
+
+# 작심 일일 코딩 2022.7.3 (일) 끝.
