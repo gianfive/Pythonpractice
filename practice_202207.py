@@ -38,8 +38,20 @@
 # trip_to = ThailandPackage()
 # trip_to.detail()
 
-from travel import vietnam
+# from travel import vietnam
+# trip_to = vietnam.VietnamPackage()
+# trip_to.detail()
+
+# 작심 일일 코딩 2022.7.3 (일) 끝.
+
+# 작심 일일 코딩 2022.7.4 (월) 시작
+
+from travel import * # 개발자가 공개하고자 하는 범위를 지정해야 함
 trip_to = vietnam.VietnamPackage()
 trip_to.detail()
 
-# 작심 일일 코딩 2022.7.3 (일) 끝.
+# 작심 일일 코딩 2022.7.4 (월) 끝.
+
+
+
+
