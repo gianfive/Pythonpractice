@@ -46,12 +46,8 @@
 
 # 작심 일일 코딩 2022.7.4 (월) 시작
 
-from travel import * # 개발자가 공개하고자 하는 범위를 지정해야 함
-trip_to = vietnam.VietnamPackage()
+from travel import *
+trip_to=thailand.VietnamPackage()
 trip_to.detail()
 
 # 작심 일일 코딩 2022.7.4 (월) 끝.
-
-
-
-
