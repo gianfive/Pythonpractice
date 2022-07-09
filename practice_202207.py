@@ -74,10 +74,19 @@
 # 작심 일일 코딩 2022.7.7 (목) 시작
 # 패키지, 모듈위치
 
-import inspect
-import random
-print(inspect.getfile(random))
-print(inspect.getfile(thailand)
+# import inspect
+# import random
+# print(inspect.getfile(random))
+# print(inspect.getfile(thailand)
 
-# 작심 일일 코딩 2022.7.8 (목) 끝.
+# 작심 일일 코딩 2022.7.7 (목) 끝.
+
+# 작심 일일 코딩 2022.7.9 (토) 시작
+# pip install
+
+from bs4 import BeautifulSoup
+soup = BeautifulSoup("<p>Some<b>bad<i>HTML")
+print(soup.prettify())
+
+# 작심 일일 코딩 2022.7.9 (토) 시작
 
