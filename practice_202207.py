@@ -149,15 +149,26 @@
 # print(time.localtime())
 # print(time.strftime("%Y-%m-%d %H:%M:%S))
 
-import datetime
+# import datetime
 # print("오늘 날짜는 ",datetime.date.today())
 
 # timedelta : 두 날짜 사이의 간격
-today = datetime.date.today() # 오늘 날짜 저장
+# today = datetime.date.today() # 오늘 날짜 저장
 
-td = datetime.timedelta(days=100)
-print("우리가 만난지 100일은", today + td)
+# td = datetime.timedelta(days=100)
+# print("우리가 만난지 100일은", today + td)
 
 # 작심 일일 코딩 2022.7.12 (화) 끝.
 
+# 작심 일일 코딩 2022.7.15 (금) 시작
+# 자료형
 
+print(5)
+print(-10) # 음수도 가능
+print(3.14) # 실수도 가능
+print(1000000000000000000000000)
+print(5+3)
+print(2*8)
+print(3*(3+1))
+
+# 작심 일일 코딩 2022.7.15 (금) 끝.
