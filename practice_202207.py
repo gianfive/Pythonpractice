@@ -187,9 +187,21 @@
 # boolean 자료형
 # 참/거짓
 
-print(5>10)
-print(5<10)
-print(True)
-print(False)
+# print(5>10)
+# print(5<10)
+# print(True)
+# print(False)
 
 # 작심 일일 코딩 2022.7.18 (월) 끝.
+
+# 작심 일일 코딩 2022.7.19 (화) 시작
+
+print (not True)
+print (not False)
+print (5>10)
+
+# 작심 일일 코딩 2022.7.19 (화) 끝.
+
+# 작심 일일 코딩 2022.7.20 (수) 시작
+# 변수
+
