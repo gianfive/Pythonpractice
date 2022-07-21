@@ -196,12 +196,35 @@
 
 # 작심 일일 코딩 2022.7.19 (화) 시작
 
-print (not True)
-print (not False)
-print (5>10)
+# print (not True)
+# print (not False)
+# print (5>10)
 
 # 작심 일일 코딩 2022.7.19 (화) 끝.
 
-# 작심 일일 코딩 2022.7.20 (수) 시작
+# 작심 일일 코딩 2022.7.21 (목) 시작
 # 변수
+# 애완동물을 소개해주세요
 
+# print("우리집 강아지 이름은 연탄이에요")
+# print("연탄이는 4살이며, 산책을 아주 좋아해요")
+# print("연탄이는 어른일까요? True")
+
+# 길어지면 놓칠 수 있기 때문에 변수를 사용
+
+animal = "강아지"
+name = "연탄이"
+age = 4
+hobby = "산책"
+is_adult = age >=3
+
+print("우리집 " + animal + " 이름은 " + name + "에요.")
+hobby = "공놀이"
+# print(name + "이는 " + str(age) + "살이며, " + hobby + "을 아주 좋아해요")
+print(name, "이는 ", age, "살이며, ", hobby, "을 아주 좋아해요")
+print(name + "는 어른일까요? " + str(is_adult))
+
+#변수는 맨 위쪽에 선언할 수도 있지만, 문장 중간에 선언할 수도 있다.
+
+
+# 작심 일일 코딩 2022.7.20 (목) 끝.
