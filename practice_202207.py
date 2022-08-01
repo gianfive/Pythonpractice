@@ -290,7 +290,30 @@
 # print((3>0) or (3>5))
 # print((3>0) | (3>5))
 
-print((5>4>3))
-print((5>4>7))
+# print((5>4>3))
+# print((5>4>7))
 
 # 작심 일일 코딩 2022.7.31 (일) 끝.
+
+# 작심 일일 코딩 2022.8.1 (월) 시작
+# 간단한 수식
+
+# print(2+3*4) #14
+# print((2 + 3) * 4) = #20
+number = 2+3*4
+print(number)
+number=number+2
+print(number)
+number +=2
+print(number)
+number *=2
+print(number)
+number /=2
+print(number)
+number -=2
+print(number)
+
+number %=5
+print(number)
+
+# 작심 일일 코딩 2022.8.1 (월) 끝.
