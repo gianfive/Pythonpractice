@@ -106,14 +106,31 @@ from random import *
 # 작심 일일 코딩 2022.8.8 (월) 시작
 # 문자열
 
-sentence = '나는 소년입니다.'
-print(sentence)
-sentence2 = '파이썬은 쉬워요'
-print(sentence2)
-sentence3 = """
-나는 소년이고
-파이썬은 쉬워요
-"""
-print(sentence3)
+# sentence = '나는 소년입니다.'
+# print(sentence)
+# sentence2 = '파이썬은 쉬워요'
+# print(sentence2)
+# sentence3 = """
+# 나는 소년이고
+# 파이썬은 쉬워요
+# """
+# print(sentence3)
 
 # 작심 일일 코딩 2022.8.8 (월) 끝.
+
+# 작심 일일 코딩 2022.8.9 (화) 시작
+# 슬라이싱
+# jumin = "810319-1234567"
+
+# print("성별 : " + jumin[7])
+# print("연 : " + jumin[:2]) # 0번째부터 2번째 직전 값 까지
+# print("월 : " + jumin[2:4]) 
+# print("일 : " + jumin[4:6])
+# print("생년월일 : " + jumin[:6]) # 처음부터 6 직전까지
+# print("뒤 7자리 : " + jumin[7:]) # 7번째 부터 끝까지
+# print("뒤 7 자리 (뒤에서부터) : " + jumin[-7:]) # 맨뒤에서 7번째 부터 끝까지
+
+# 작심 일일 코딩 2022.8.9 (화) 끝.
+
+
+
