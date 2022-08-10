@@ -142,15 +142,49 @@ python = "Python is Amazing"
 # print(len(python)) #문자열 길이
 # print(python.replace("Python","Java")) # 단, 대소문자 구분하여 찾음
 
-index = python.index("n")
-print(index)
-index = python.index("n", index +1)
-print(index)
+# index = python.index("n")
+# print(index)
+# index = python.index("n", index +1)
+# print(index)
 
-print(python.find("n"))
-print(python.find("Java")) # 내가 원하는 값이 없으면 -1
-# index = python.index("Java") # 내가 원하는 값이 없으면 에러를 내면서 프로그램 종료
+# print(python.find("n"))
+# print(python.find("Java")) # 내가 원하는 값이 없으면 -1
+# # index = python.index("Java") # 내가 원하는 값이 없으면 에러를 내면서 프로그램 종료
 
-print(python.count("n"))
+# print(python.count("n"))
 
 # 작심 일일 코딩 2022.8.10 (수) 끝.
+
+# 작심 일일 코딩 2022.8.11 (목) 시작
+# 문자열 포맷
+# print("a" + "b")
+# print("a", "b")
+
+# 방법 1
+# print("나는 %d 살입니다." % 20)
+# print("나는 %s 를 좋아해요." % "파이썬")
+# print("Apple은 %c로 시작해요." % "A")
+
+# %s 는 정수건 수자건 상관없이 출력한다
+# print("나는 %s 살입니다." % 20)
+# print("나는 %s 색과 %s 색을 좋아해요." % ("파란", "빨간"))
+
+# 방법2
+# print("나는 {}살입니다.".format(20))
+# print("나는 {}색과 {}색을 좋아해요.".format("파란", "빨간"))
+# print("나는 {0}색과 {1}색을 좋아해요.".format("파란", "빨간"))
+# print("나는 {1}색과 {0}색을 좋아해요.".format("파란", "빨간"))
+
+# 방법 3
+# print("나는 {age}살이며, {color}색을 좋아해요.".format(age=20,color="빨간"))
+# print("나는 {age}살이며, {color}색을 좋아해요.".format(color="빨간", age = 20))
+
+# 방법4 (v3.6이상)
+age = 20
+color = "빨간"
+print(f"나는 {age}살이며, {color}색을 좋아해요.")
+
+# 작심 일일 코딩 2022.8.11 (목) 끝.
+
+
+
