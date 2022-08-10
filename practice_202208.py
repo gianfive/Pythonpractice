@@ -132,5 +132,25 @@ from random import *
 
 # 작심 일일 코딩 2022.8.9 (화) 끝.
 
+# 작심 일일 코딩 2022.8.10 (수) 시작
+# 문자열함수
 
+python = "Python is Amazing"
+# print(python.lower())
+# print(python.upper())
+# print(python[0].isupper()) # 문장의 첫 번째 값이 대문자냐 ? True? False?
+# print(len(python)) #문자열 길이
+# print(python.replace("Python","Java")) # 단, 대소문자 구분하여 찾음
 
+index = python.index("n")
+print(index)
+index = python.index("n", index +1)
+print(index)
+
+print(python.find("n"))
+print(python.find("Java")) # 내가 원하는 값이 없으면 -1
+# index = python.index("Java") # 내가 원하는 값이 없으면 에러를 내면서 프로그램 종료
+
+print(python.count("n"))
+
+# 작심 일일 코딩 2022.8.10 (수) 끝.
