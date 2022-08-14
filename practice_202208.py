@@ -180,11 +180,35 @@ python = "Python is Amazing"
 # print("나는 {age}살이며, {color}색을 좋아해요.".format(color="빨간", age = 20))
 
 # 방법4 (v3.6이상)
-age = 20
-color = "빨간"
-print(f"나는 {age}살이며, {color}색을 좋아해요.")
+# age = 20
+# color = "빨간"
+# print(f"나는 {age}살이며, {color}색을 좋아해요.")
 
 # 작심 일일 코딩 2022.8.11 (목) 끝.
 
+# 작심 일일 코딩 2022.8.14 (일) 시작
+
+# 퀴즈) 사이트별로 비번 생성 프로그램
+
+# 예) http://naver.com
+
+# 1. http:// 제외
+# 2. . 제외
+# 3. 남은 글자 중 처음 세자리 + 글자개수 + 글자 내 'e' 개수 + "!" 로 구성
+#                     (nav)       (5)     (1)             (!)
+# 생성 미빌번호 : nav51!
+
+# 내가한거
+# password = "http://naver.com"
+# print(password[7:10],(len(password)-11),password.count("e"),"!")
+
+# 정답
+# url = "http://naver.com"
+# my_str = url.replace("http://", "") 
+# my_str = my_str[:my_str.index(".")]
+# print(my_str)
+# password = my_str[:3] + str(len(my_str)) + str(my_str.count("e")) + "!"
+# print("{0}의 비번은 {1} 입니다.".format(url, password))
 
 
+# 작심 일일 코딩 2022.8.14 (일) 끝.
