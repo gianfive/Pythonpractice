@@ -322,3 +322,22 @@ python = "Python is Amazing"
 # print(cabinet)
 
 # 작심 일일 코딩 2022.8.16 (화) 끝.
+
+# 작심 일일 코딩 2022.8.18 (목) 시작
+# 튜플 : 속도가 빨라서 변경되지 않는 목록을 사용할 때
+
+menu = ("돈가스", "치즈가스")
+print(menu[0])
+print(menu[1])
+
+# menu.add("생선가스") : 에드기능 없어서 오류
+
+name = "김종국"
+age = 20
+hobby = "코딩"
+print (name, age, hobby)
+
+name, age, hobby = "김종국", 20, "코딩"
+print(name, age, hobby)
+
+# 작심 일일 코딩 2022.8.18 (목) 끝.
