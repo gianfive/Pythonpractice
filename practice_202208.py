@@ -357,4 +357,18 @@ print(java.intersection(python))
 
 # 작심 일일 코딩 2022.8.21 (일) 끝.
 
+# 작심 일일 코딩 2022.8.22 (화) 시작
+# 합집합 (java도 할 수 있거나 python 할 수 있는 개발자)
+
+print(java | python)
+print(java.union(python))
+
+#차집합 (java하고 python 못함)
+
+print(java - python)
+print(java.difference(python))
+
+# 작심 일일 코딩 2022.8.22 (화) 끝.
+
+
 
