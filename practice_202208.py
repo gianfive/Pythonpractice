@@ -370,5 +370,20 @@ print(java.difference(python))
 
 # 작심 일일 코딩 2022.8.22 (화) 끝.
 
+# 작심 일일 코딩 2022.8.29 (월) 시작
+# 이어서
+
+# python 할 줄 아는 사람이 늘어남
+python.add("김태호")
+print(python)
+
+# java 까먹음
+
+python.remove("김태호")
+print(python)
+
+# 작심 일일 코딩 2022.8.29 (월) 끝.
+
+
 
 
