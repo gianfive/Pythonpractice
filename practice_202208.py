@@ -348,41 +348,59 @@ python = "Python is Amazing"
 # my_set = {1,2,3,3,3}
 # print(my_set)
 
-java = {"유재석", "김태호", "양세형"}
-python = set(["유재석", "박병수"])
+# java = {"유재석", "김태호", "양세형"}
+# python = set(["유재석", "박병수"])
 
-# 교집합 (java 와 python 모두 가능한 사람)
-print(java & python)
-print(java.intersection(python))
+# # 교집합 (java 와 python 모두 가능한 사람)
+# print(java & python)
+# print(java.intersection(python))
 
-# 작심 일일 코딩 2022.8.21 (일) 끝.
+# # 작심 일일 코딩 2022.8.21 (일) 끝.
 
-# 작심 일일 코딩 2022.8.22 (화) 시작
-# 합집합 (java도 할 수 있거나 python 할 수 있는 개발자)
+# # 작심 일일 코딩 2022.8.22 (화) 시작
+# # 합집합 (java도 할 수 있거나 python 할 수 있는 개발자)
 
-print(java | python)
-print(java.union(python))
+# print(java | python)
+# print(java.union(python))
 
-#차집합 (java하고 python 못함)
+# #차집합 (java하고 python 못함)
 
-print(java - python)
-print(java.difference(python))
+# print(java - python)
+# print(java.difference(python))
 
-# 작심 일일 코딩 2022.8.22 (화) 끝.
+# # 작심 일일 코딩 2022.8.22 (화) 끝.
 
-# 작심 일일 코딩 2022.8.29 (월) 시작
-# 이어서
+# # 작심 일일 코딩 2022.8.29 (월) 시작
+# # 이어서
 
-# python 할 줄 아는 사람이 늘어남
-python.add("김태호")
-print(python)
+# # python 할 줄 아는 사람이 늘어남
+# python.add("김태호")
+# print(python)
 
-# java 까먹음
+# # java 까먹음
 
-python.remove("김태호")
-print(python)
+# python.remove("김태호")
+# print(python)
 
 # 작심 일일 코딩 2022.8.29 (월) 끝.
+
+# 작심 일일 코딩 2022.8.30 (화) 시작
+# 자료 구조의 변경
+
+menu = {"커피", "우유", "주스"}
+print(menu, type(menu))
+
+menu = list(menu)
+print(menu, type(menu))
+
+menu = tuple(menu)
+print(menu, type(menu))
+
+menu = set(menu)
+print(menu, type(menu))
+     
+# 작심 일일 코딩 2022.8.30 (화) 끝.
+
 
 
 
