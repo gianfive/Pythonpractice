@@ -59,15 +59,41 @@
 
 # 작심삼일 일일코딩 2022.9.3 (일) 시작
 
-temp = int(input("기온은 어때요?"))
-if temp >= 30:
-    print("너무 더워요 나가지 마세요")
-elif 10 <= temp <= 30:
-    print("괜찮은 날씨에요")
-elif 0<= temp <= 10:
-    print("외투를 챙기세요")
-else:
-    print("너무 추워요. 나가지 마세요")
+# temp = int(input("기온은 어때요?"))
+# if temp >= 30:
+#     print("너무 더워요 나가지 마세요")
+# elif 10 <= temp <= 30:
+#     print("괜찮은 날씨에요")
+# elif 0<= temp <= 10:
+#     print("외투를 챙기세요")
+# else:
+#     print("너무 추워요. 나가지 마세요")
 
 # 작심삼일 일일코딩 2022.9.3 (일) 끝.
 
+# 작심삼일 일일코딩 2022.9.4 (월) 시작
+# print("대기번호 : 1")
+# print("대기번호 : 2")
+# print("대기번호 : 3")
+# print("대기번호 : 4")
+
+# for waiting_no in [0,1,2,3,4,]:
+#     print("대기번호 : {0}".format(waiting_no))
+
+# for waiting_no in range(5):
+#     print("대기번호 : {0}".format(waiting_no))
+
+# for waiting_no in range(1,6):
+#     print("대기번호 : {0}".format(waiting_no))
+
+# starbucks = ["아이언맨", "토르", "그루트"]
+
+# for customer in starbucks:
+#     print("{0}, 커피가 준비되었습니다.".format(customer))
+
+유천냉면 = ["서수정", "김용호", "김영우"]
+
+for 감사팀 in 유천냉면:
+    print("냉면 나왔습니다.", "네 {0}입니다.".format(감사팀))
+
+# 작심삼일 일일코딩 2022.9.3 (월) 끝.
