@@ -102,15 +102,25 @@
 # while 반복문
 # 다섯번 손님 부르고 없으면 커피 버림
 
-customer = "토르"
-index = 5
+# customer = "토르"
+# index = 5
 
-while index >=1:
-    print("{0}! 커피가 준비되었습니다. 불러주는거 {1} 번 남았습니다.".format(customer, index))
-    index -= 1
-    if index == 0:
-        print("커피 버립니다.")
+# while index >=1:
+#     print("{0}! 커피가 준비되었습니다. 불러주는거 {1} 번 남았습니다.".format(customer, index))
+#     index -= 1
+#     if index == 0:
+#         print("커피 버립니다.")
 
- 
 # 작심삼일 일일코딩 2022.9.6 화 끝.
+
+# 작심삼일 일일코딩 2022.9.7 수 시작
+customer ="토르"
+person = "unknown"
+
+while person != customer:
+    person = input("이름이 어떻게 되세요?")
+    print("{0}, 커피가 준비되었습니다.".format(customer))
+
+
+# 작심삼일 일일코딩 2022.9.7 수 끝.
 
