@@ -114,13 +114,27 @@
 # 작심삼일 일일코딩 2022.9.6 화 끝.
 
 # 작심삼일 일일코딩 2022.9.7 수 시작
-customer ="토르"
-person = "unknown"
+# customer ="토르"
+# person = "unknown"
 
-while person != customer:
-    person = input("이름이 어떻게 되세요?")
-    print("{0}, 커피가 준비되었습니다.".format(customer))
-
+# while person != customer:
+#     person = input("이름이 어떻게 되세요?")
+#     print("{0}, 커피가 준비되었습니다.".format(customer))
 
 # 작심삼일 일일코딩 2022.9.7 수 끝.
+
+# 작심삼일 일일코딩 2022.9.10 토 시작
+# continue 와 break
+
+# absent = [2, 5] #결석
+# no_book = [7] # 책을 깜빡했음
+# for student in range(1, 11): # 1,2,3,4,5,6,7,8,9,10
+#     if student in absent: # 1. 결석한 학생의 번호를 만나게 되면
+#         continue  # 2. 아래 있는 명령문을 실행하지 않고 다음 반복을 실행한다는 의미
+#     elif student in no_book:
+#         print("오늘 수업 여기까지, {0} 은 교무실로 따라와".format(student))
+#         break
+#     print("{0}, 책을 읽어봐". format(student))
+    
+# 작심삼일 일일코딩 2022.9.10 토 끝.
 
