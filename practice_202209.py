@@ -138,3 +138,24 @@
     
 # 작심삼일 일일코딩 2022.9.10 토 끝.
 
+# 작심삼일 일일코딩 2022.9.11 일 시작
+# 한 줄 for
+# 출석번호가 1 2 3 4, 앞에 100을 붙이기로 함 -> 100, 101, 102, 103, 104
+
+# students = [1,2,3,4,5]
+# print(students)
+
+# students = [i+100 for i in students]
+# print(students)
+
+# students = ["Iron man", "Thor", "I am groot"]
+# students = [len(i) for i in students]
+# print(students)
+
+# 학생 이름을 대문자로 변화
+# students = ["Iron man", "Thor", "I am groot"]
+# students = [i.upper() for i in students]
+# print(students)
+
+# 작심삼일 일일코딩 2022.9.10 일 끝.
+
