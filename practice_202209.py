@@ -246,11 +246,23 @@ def open_account():
 
 # 같은학교 같은학년 같은반 같은 수업
     
-def profile(name, age=17, main_lang="python"):
-    print("이름: {0}\t나이: {1}\t주 사용언어: {2}" \
-        .format(name, age, main_lang))
+# def profile(name, age=17, main_lang="python"):
+#     print("이름: {0}\t나이: {1}\t주 사용언어: {2}" \
+#         .format(name, age, main_lang))
 
-profile("유재석")
-profile("김태호")
+# profile("유재석")
+# profile("김태호")
 
 # 작심삼일 일일코딩 2022.9.17 토 끝.
+
+# 작심삼일 일일코딩 2022.9.18 일 시작
+# 키워드값
+
+def profile(name, age, main_lang):
+    print(name, age, main_lang)
+
+profile(name="유재석", main_lang="파이썬", age=20)
+profile(main_lang="자바", age = 25, name="김태호")
+
+# 작심삼일 일일코딩 2022.9.18 토 끝.
+
