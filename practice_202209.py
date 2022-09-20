@@ -273,15 +273,34 @@ def open_account():
 #     print(lang1, lang2, lang3, lang4, lang5)
 
 # 가변인자
-def profile(name, age, *language):
-    print("이름: {0}\t나이 : {1}\t".format(name, age), end=" ")
-    for lang in language:
-        print(lang, end=" ")
-    print()
+# def profile(name, age, *language):
+#     print("이름: {0}\t나이 : {1}\t".format(name, age), end=" ")
+#     for lang in language:
+#         print(lang, end=" ")
+#     print()
 
-profile("유재석", 20, "python", "java", "c", "c++", "c#", "java script")
-profile("김태호", 25, "kotlin", "swift")
+# profile("유재석", 20, "python", "java", "c", "c++", "c#", "java script")
+# profile("김태호", 25, "kotlin", "swift")
 
+# 작심삼일 일일코딩 2022.9.20 화 시작
+# 지역변수와 전역변수
 
-# 작심삼일 일일코딩 2022.9.19 월 끝.
+gun = 10
 
+def checkpoint(soldiers):
+    global gun # 전역 공간에 있는 gun 사용
+    gun = gun - soldiers
+    print("[함수 내] 남은 총 : {0}".format(gun))
+
+def checkpoint_ret(gun, soldiers):
+    gun=gun-soldiers
+    print("[함수 내] 남은 총 : {0}".format(gun))
+    return gun
+
+print("전체 총 수 : {0}".format(gun))
+
+gun = checkpoint_ret(gun,2)
+
+print("전체 총 수 : {0}".format(gun))
+
+# 작심삼일 일일코딩 2022.9.20 화 끝.
