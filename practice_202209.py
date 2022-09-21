@@ -195,8 +195,8 @@
 
 # # 작심삼일 일일코딩 2022.9.15 목 시작
 # # 함수
-def open_account():
-    print("새로운 계좌가 생성되었습니다.")
+# def open_account():
+#     print("새로운 계좌가 생성되었습니다.")
 
 # open_account()
 
