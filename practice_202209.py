@@ -307,16 +307,25 @@
 
 # 작심삼일 일일코딩 2022.9.21 수 시작
 
-def std_weight(height, gender):
-    if gender =="남자":
-        return height*height*22
-    else:
-        return height*height*21
+# def std_weight(height, gender):
+#     if gender =="남자":
+#         return height*height*22
+#     else:
+#         return height*height*21
 
-height = 175
-gender = "남자"
-weight = round(std_weight(height / 100, gender), 2)
+# height = 175
+# gender = "남자"
+# weight = round(std_weight(height / 100, gender), 2)
 
-print("키{0}cm {1}의 표준체중은 {2}kg 입니다.".format(height, gender, weight))
+# print("키{0}cm {1}의 표준체중은 {2}kg 입니다.".format(height, gender, weight))
+
+# 작심삼일 일일코딩 2022.9.21 수 끝.
+
+# 작심삼일 일일코딩 2022.9.25 일 시작
+# 표준입출력
+
+print("Python", "Java", sep=",")
+print("Python", "Java", sep=" vs ")
+print("Python", "Java", "Java script", sep=" vs ")
 
 # 작심삼일 일일코딩 2022.9.21 수 끝.
