@@ -321,11 +321,13 @@
 
 # 작심삼일 일일코딩 2022.9.21 수 끝.
 
-# 작심삼일 일일코딩 2022.9.25 일 시작
-# 표준입출력
+# 작심삼일 일일코딩 2022.9.29 목 시작
+print("Python", "Java", sep=",", end="?")
+print("무엇이 더 재미있을까요?")
 
-print("Python", "Java", sep=",")
-print("Python", "Java", sep=" vs ")
-print("Python", "Java", "Java script", sep=" vs ")
+import sys
+print("Python", "Java", file=sys.stdout)
+print("Python", "Java", file=sys.stdout)
 
-# 작심삼일 일일코딩 2022.9.21 수 끝.
+# 작심삼일 일일코딩 2022.9.29 목 시작
+
